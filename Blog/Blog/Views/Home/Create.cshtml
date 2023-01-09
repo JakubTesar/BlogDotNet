@@ -1,0 +1,32 @@
+﻿@page
+@model Blog.Views.Home.Create
+@model Blog.Models.Post
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div>
+    <form method="post">
+        <label asp-for="Name">Name:</label>
+        <input asp-for="Name" type="text">
+        <br/>
+        <span asp-validation-for="Name"></span>
+        <br/>
+        <label asp-for="Description">Description:</label>
+        <input asp-for="Description" type="text">
+        <br/>
+        <span asp-validation-for="Description"></span>
+        <br/>
+        <input type="submit"/>
+    </form>
+</div>
+</body>
+</html>

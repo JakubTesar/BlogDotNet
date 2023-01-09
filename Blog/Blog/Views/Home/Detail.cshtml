@@ -5,9 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Detail</title>
 </head>
 <body>
-    
+<h1 class="m-3"><span class="text-primary">Post</span>List.io</h1>
+<div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center flex-column w-50 m-5">
+        <h1>#{postService.detailPost.name}</h1>
+        <div class="border rounded-1 p-5">
+            <p class="w-100 text">#{postService.detailPost.content}</p>
+            <div class="d-flex align-items-end justify-content-start mb-3">
+                <div>#{postService.detailPost.date}</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="d-flex justify-content-center">
+    <a  class="btn btn btn-light" asp-page="Index">Back to Home</a>
+</div>
 </body>
 </html>
