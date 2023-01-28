@@ -15,8 +15,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Tessi\Documents\GitHub\BlogDotNet\Blog\Blog
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Tessi/Documents/GitHub/BlogDotNet/Blog/Blog/Views/Home/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGUuY3NodG1s
+[C:/Users/Tessi/Documents/GitHub/BlogDotNet/Blog/Blog/Views/Create/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Tessi/Documents/GitHub/BlogDotNet/Blog/Blog/Views/Home/Detail.cshtml]

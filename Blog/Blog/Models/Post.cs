@@ -1,16 +1,26 @@
-﻿namespace Blog.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Blog.Models;
 
 public class Post
 {
-    public string Name { get; set;}
-    public string Description{ get; set;}
-    public string DescriptionShort{ get; set;}
+    [Required] public string Name { get; set; }
+    [Required] public string Description { get; set; }
+    public string DescriptionShort { get; set; }
     public DateTime DateTime { get; set; } = DateTime.Now;
+    public int Id { get; set; }
 
-    public Post(string name, string description, string descriptionShort)
+    public Post(string name, string description)
     {
         Name = name;
         Description = description;
-        DescriptionShort = descriptionShort;
+        if (description.Length > 100)
+        {
+            DescriptionShort = description.Substring(0, 100) + "...";
+        }
+        else
+        {
+            DescriptionShort = Description;
+        }
     }
 }

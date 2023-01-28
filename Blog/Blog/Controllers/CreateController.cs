@@ -8,6 +8,7 @@ public class Create : Controller
     // GET
     public IActionResult Index()
     {
+       // Post model = new Post();
         return View();
     }
     [HttpPost]
